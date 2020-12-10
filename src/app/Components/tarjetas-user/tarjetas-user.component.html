@@ -1,0 +1,79 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+    <div class="container">
+      <a class="navbar-brand" routerLink="../inicioUsuario/inicioUsuario.html">
+        <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px" style="margin-left:40%">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/notificacion/User">Notificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor" routerLink="/ModificarDatos/User">Modificar Datos</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link letracolor" routerLink="/perfil/User">Perfil</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/">Salir</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link letracolor btn btn-primary p-1 " routerLink="/plan/user" >Modificar Plan</a>
+            </li><br>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <br><br><br>
+    <h1 class="text-center">¡TENEMOS LOS MEJORES PLANES PARA TI!</h1>
+    <br><br><br>
+    <div class="card card1" style="width: 50rem;">
+    <div class="row">
+        <div class="col mb-4" >
+           
+            <div class="card " style="width: 18rem;">
+                <!--Lo que va hacer es que va a integrar y guardar cada dato de los libros en b-->
+                <img src="assets/image/desordenImg/free.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">FREE</h5>
+                    <p class="card-text">Aqui tendras la opcion de solo ver algunas ofertas, ten encuenta que no tendras la oportunidad 
+                        de postularte ni crear tu perfil.
+                    
+                 </p>
+                    <a href="#" class="btn btn-primary">Comenzar</a>
+                </div>
+            </div>
+        </div>  
+<!-- *ngFor="let b of allPlanes" -->
+<!-- *ngFor="let b of allPlanes" -->
+
+            <div class="col mb-4" >
+                <div class="card" style="width: 18rem;">
+                    <!--Lo que va hacer es que va a integrar y guardar cada dato de los libros en b-->
+                    <img src="assets/image/desordenImg/PremiumProgramador.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PREMIUM</h5>
+                        <p class="card-text">Aqui podras ver ofertas, postularte, recibir notificaciones y crear tu perfil
+                            para que las empresas puedan conocerte mejor.
+                            <br>
+                            <br>
+                            $30.000 Pesos Mensuales
+                        </p>
+                        <a routerLink="/pagos" class="btn btn-primary">Comenzar</a>
+                    </div>
+                </div>
+            </div>    
+    </div>      
+</div>
+</div>
+
+  

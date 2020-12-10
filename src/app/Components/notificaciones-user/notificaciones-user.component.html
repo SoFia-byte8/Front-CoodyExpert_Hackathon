@@ -1,0 +1,148 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+  <div class="container">
+    <a class="navbar-brand" routerLink="../inicioUsuario/inicioUsuario.html">
+      <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px" style="margin-left:40%">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/notificacion/User">Notificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/ModificarDatos/User">Modificar Datos</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/perfil/User">Perfil</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/">Salir</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link letracolor btn btn-primary p-1 " routerLink="tarjetas-user" >Premium!</a>
+          </li><br>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="contenido-principal " style="margin-top:95px">
+  <div class="contenedor-zona row">
+    <div class="wh1 col-xs-18 col-sm-6 col-md-7">
+      <div class="headwh1">
+        <div class="tit-untf"><b>Últimas Notificaciones</b></div>
+        <div class="tit-vntf">
+          <a id="verNotificaciones" class="go-notificaciones">NOTIFICACIONES</a>
+        </div>
+      </div>
+      <div class="notif">
+        <!--Carga notificaciones-->
+        <div class="XiNotificacion">
+          <div class="XiNotificacionContenido">
+            <span class="XiNotificacionContenidoC">
+              Ninguna
+            </span>
+          </div>
+          <div class="XiNotificacionTitulo">
+            <span class="XiNotificacionSistema">Sistema</span>
+            <span class="XiNotificacionFecha"> 00/00/2020 </span>
+            <span class="XiNotificacionHora"> 00:00 hrs </span>
+            <span class="XiNotificacionIr">ir a: <a id="XiNI" routerLink="#" class="XiNI">LOREM IPSUM</a></span>
+          </div>
+        </div>
+        <div class="XiNotificacion">
+          <div class="XiNotificacionContenido">
+            <span class="XiNotificacionContenidoC">
+              Ninguna
+            </span>
+          </div>
+          <div class="XiNotificacionTitulo">
+            <span class="XiNotificacionSistema">Sistema</span>
+            <span class="XiNotificacionFecha"> 00/00/2020 </span>
+            <span class="XiNotificacionHora"> 00:00 hrs </span>
+            <span class="XiNotificacionIr">ir a: <a id="XiNI" routerLink="#" class="XiNI">LOREM IPSUM</a></span>
+          </div>
+        </div>
+        <div class="XiNotificacion">
+          <!-- <div class="XiNotificacionContenido">
+            <span class="XiNotificacionContenidoC">
+              Ninguna
+            </span>
+          </div> -->
+          <div class="XiNotificacionTitulo">
+            <span class="XiNotificacionSistema">Sistema</span>
+            <span class="XiNotificacionFecha"> 00/00/2020 </span>
+            <span class="XiNotificacionHora"> 00:00 hrs </span>
+            <span class="XiNotificacionIr">ir a: <a id="XiNI" routerLink="#" class="XiNI">LOREM IPSUM</a></span>
+          </div>
+        </div>
+        <div class="XiNotificacion">
+          <div class="XiNotificacionContenido">
+            <span class="XiNotificacionContenidoC">
+              Ninguna
+            </span>
+          </div>
+          <div class="XiNotificacionTitulo">
+            <span class="XiNotificacionSistema">Sistema</span>
+            <span class="XiNotificacionFecha"> 00/00/2020 </span>
+            <span class="XiNotificacionHora"> 00:00 hrs </span>
+            <span class="XiNotificacionIr">ir a: <a id="XiNI" routerLink="#" class="XiNI">LOREM IPSUM</a></span>
+          </div>
+        </div>
+        <div class="XiNotificacion">
+          <div class="XiNotificacionContenido">
+            <span class="XiNotificacionContenidoC">
+              Ninguna
+            </span>
+          </div>
+          <div class="XiNotificacionTitulo">
+            <span class="XiNotificacionSistema">Sistema</span>
+            <span class="XiNotificacionFecha"> 04/05/2015 </span>
+            <span class="XiNotificacionHora"> 00:00 hrs </span>
+            <span class="XiNotificacionIr">ir a: <a id="XiNI" routerLink="#" class="XiNI">LOREM IPSUM</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wh2 col-xs-6 col-md-4">
+      <div class="headwh2">
+        <div class="tit-miPerfil">Mi perfil</div>
+        <div class="tit-vstat">
+          <a id="verESTADISTICAS" class="go-miperfilstats">ESTADÍSTICAS</a>
+        </div>
+      </div>
+
+      <div class="zona-puntos">
+        <div class="pts-e">
+          <span class="pts-ac">Programador</span>
+          <span class="PPX"></span>
+        </div>
+      </div>
+
+      
+        <form id="datos-emp">
+          <input class="in-data" type="text" placeholder="Nombre de Empleado" id="nombre" value="" >
+          <!-- <button id="edit-idata" type="button" class="e-idata btn-primary edit-button" data-style="zoom-out">
+            <span class="edit-label"><a routerLink="../ModificarDatos_Usuario/miCuenta.html" style="color:white"> Editar
+            </span>
+          </button> -->
+          
+          <input class="in-data" type="text" placeholder="Dirección" id="direccion" value="" >
+          <input class="in-data" type="text" placeholder="Telefono de contacto" id="telefono" value="" >
+          <input class="in-data" type="text" placeholder="Mail de contacto" id="email" value="" >
+          <input class="in-data" type="password" placeholder="Nueva Contraseña" id="contraseña" >
+          <input class="in-data" type="password" placeholder="Repetir Contraseña" id="recontraseña" >
+        </form>
+      
+      <button id="iPFS" type="button" class="iPFS btn-primary ladda-button" data-style="zoom-out" disabled="">
+        <span class="ladda-label">Actualizar Información</span>
+      </button>
+  
+    </div>
+  </div>     

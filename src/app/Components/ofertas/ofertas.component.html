@@ -1,0 +1,361 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+  <div class="container">
+    <a class="navbar-brand" routerLink="../Home_Empresa/inicioEmpr.html">
+      <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/crearOferta">Crear Oferta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/modificarDatos/company">Editar Datos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/losMejoresProgramadores/reclutar">Buscar Desarrolladores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/notificacion/company">Notificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/perfil/Empresa">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="row" style="margin-top: 85px;">
+    <div class="col-3">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" routerLink="#v-pills-home" role="tab"
+          aria-controls="v-pills-home" aria-selected="true">Crear oferta</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" routerLink="#v-pills-profile" role="tab"
+          aria-controls="v-pills-profile" aria-selected="false">Historial de oferta</a>
+        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" routerLink="#v-pills-messages" role="tab"
+          aria-controls="v-pills-messages" aria-selected="false">Postulantes</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="v-pills-tabContent">
+
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <!--crear oferta-->
+          <div class="card pading">
+            <div class="card-body">
+              <h5 class="card-title">Crear nueva oferta</h5>
+              <p class="card-text">¿Deseas crear una oferta? llena el siguiente formulario y en menos de 5 minutos tu oferta podra ser subida.
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="assets/image/crearOfertas/programacion27.jpg" class="card-img-bottom" alt="...">
+          </div>
+
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Titulo:</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Formación:</label>
+                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Descripcion</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">Rango de salario</label>
+                <select class="custom-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elegir...</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">Categoria</label>
+                <select class="custom-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elegir...</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck"> <br>
+                  Aceptas que tu informacion de perfil sea publicada junto con la oferta
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit"><a routerLink="/examOferta"
+                style="color: white; text-decoration: none;">Crear
+                examen</a></button>
+          </form>
+          <br>
+          <div class="card text-center pading">
+            <div class="card-header">
+              Publica la oferta
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Si quieres ir rápido, ve solo. Si quieres llegar lejos, ve acompañado encuentra el
+                mejor personal para cumplir tus metas.</p>
+              <a routerLink="#" class="btn btn-primary">Publicar</a>
+            </div>
+            <div class="card-footer text-muted">
+              22 de Agosto
+            </div>
+          </div>
+        </div>
+        <!--Historial de oferta-->
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Historial de oferta</h5>
+              <p class="card-text">Aqui podras encontrar todo el historial de tus ofertas</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="./imagenes/historialoferta.jpg" class="card-img-bottom" alt="...">
+          </div>
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-home-tab" data-toggle="pill" routerLink="#pills-home" role="tab"
+                aria-controls="pills-home" aria-selected="true">Ofertas publicadas</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" routerLink="#pills-profile" role="tab"
+                aria-controls="pills-profile" aria-selected="false">Ofertas eliminadas</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Eliminar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Buscamos PHP Tech Leads para unirse a nuestro equipo de Desarrollo</td>
+                    <td>3 Agosto 2020</td>
+                    <td><a routerLink="#" class="btn btn-primary">Editar</a></td>
+                    <td><a routerLink="#" class="btn btn-primary">Eliminar</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Buscamos desarrollador web PHP</td>
+                    <td>17 junio 2020</td>
+                    <td><a routerLink="#" class="btn btn-primary">Editar</a> </td>
+                    <td><a routerLink="#" class="btn btn-primary">Eliminar</a> </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Se solicita ingeniero de sistemas</td>
+                    <td>15 junio 2020</td>
+                    <td>
+                    <a routerLink="#" class="btn btn-primary">Editar</a> </td>
+                    <td><a routerLink="#" class="btn btn-primary">Eliminar</a> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Restaurar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>profesional en desarrollo web</td>
+                    <td>18 Agosto 2020</td>
+                    <td><a routerLink="#" class="btn btn-primary">Restaurar</a> </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>búsqueda de Profesional en ingeniera de sistemas, electrónica, industrial o carreras afines</td>
+                    <td>4 julio 2020</td>
+                    <td><a routerLink="#" class="btn btn-primary">Restaurar</a> </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>profesional en Ingeniería de sistemas o carreras afines</td>
+                    <td>15 junio 2020</td>
+                    <td><a routerLink="#" class="btn btn-primary">Restaurar</a> </td>
+                  </tr>
+                </tbody>
+                <button class="btn" type="submit">Eliminar todas las ofertas</button>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--Postulantes de oferta-->
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Clasifica los Postulantes</h5>
+              <p class="card-text">Aqui podras clasificar los postuslantes con mejor desempeño, conocimiento o si esta en estado contratado o en proceso.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="assets/image/crearOfertas/Programacion15.jpg" class="card-img-bottom" alt="...">
+          </div>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-nuevas-tab" data-toggle="pill" routerLink="#pills-nuevas" role="tab"
+                aria-controls="pills-nuevas" aria-selected="true">Postulaciones nuevas</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" routerLink="#pills-profile" role="tab"
+                aria-controls="pills-profile" aria-selected="false">Postulaciones en proceso</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-aceptadas-tab" data-toggle="pill" routerLink="#pills-aceptadas" role="tab"
+                aria-controls="pills-aceptadas" aria-selected="false">Postulaciones aceptadas</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-nuevas" role="tabpanel" aria-labelledby="pills-nuevas-tab">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>cesar</td>
+                    <td>16 Agosto 2020</td>
+                    <td>En proceso</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>paula</td>
+                    <td>3 Agosto 2020</td>
+                    <td>Contratado</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>jonathan</td>
+                    <td>29 julio 2020</td>
+                    <td>Contratado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Cesar</td>
+                    <td>16 Agosto 2020</td>
+                    <td>En proceso</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="pills-aceptadas" role="tabpanel" aria-labelledby="pills-aceptadas-tab">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Estado </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>paula</td>
+                    <td>3 Agosto 2020</td>
+                    <td>Contratado</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>jonathan</td>
+                    <td>29 julio 2020</td>
+                    <td>Contratado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-footer">
+    <div class="flex">
+      <a routerLink="https://www.facebook.com/Coody-Expert-100691765174664/?modal=admin_todo_tour"
+        style="color: rgb(245, 245, 245); font-size: 40px; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
+      <a routerLink="https://www.instagram.com/coodyexpert/"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
+      <a routerLink="https://www.youtube.com/channel/UCJjQWwyHmKPzh4hgrHy9NaQ"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+      DATOS &copy 2020 | <a routerLink="InicioAll.html">Coody Expert</a>
+    </div>
+  
+    <div class="information">
+      <a routerLink=""> Información Compañia </a> |
+      <a routerLink=""> Privacidad y Politica </a> |
+      <a routerLink=""> Terminos y Condiciones </a> |
+    </div>
+
+  </div>

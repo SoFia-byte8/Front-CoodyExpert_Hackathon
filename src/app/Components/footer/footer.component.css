@@ -1,0 +1,24 @@
+.container-footer {
+    width: 100%;
+    background:#333366;
+    padding: 10px;
+    
+}
+
+.copyright {
+    color: white;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.information {
+    text-align: right;
+}
+
+.information a {
+    text-decoration: none;
+    color: white;
+}

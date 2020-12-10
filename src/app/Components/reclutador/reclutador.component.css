@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.articulo {
+    margin: 40px;
+    padding: 35px;
+    background: rgba(162, 0, 255, 0.295);
+}
+
+.bg-blue{
+    color:#62CBBD;
+}
+.btn-info{
+    padding: 1%;
+}
+.height-carousel {
+    max-height: 600px;
+    min-width: 100%;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.group-color {
+    background: #00000073;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* .group--color .containers {
+    background: #38383af1;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+} */
+
+.margin__title {
+    margin: 15px;
+    font-size: 1.8em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+}
+
+.main__txt {
+    padding: 8px;
+    text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: linear-gradient(180deg, #32c953d5 0%, #46c7d8c4 100%);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.btn-lg {
+    text-align: right;
+    justify-content: center;
+}
+
+
+/* a.ejemplo1 {
+    background: linear-gradient(180deg, #32c953 0%, #46c7d8 100%);
+    color: black;
+}
+
+
+.main__about__description {
+    flex-wrap: wrap;
+}
+
+.footer {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+} */
+
+.copyright {
+    color: white;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.information {
+    text-align: right;
+}
+
+.information a {
+    text-decoration: none;
+    color: white;
+}
+
+/* modificaciones geraldine */
+.bg-pink {
+    background-color: #333366;
+    /* background-color: transparent; */
+    transition: all 1.5s ease;
+    color: white;
+    font-weight:bold;
+}
+
+/* .main {
+    background-color: #333366;
+    color: #ffffff;
+} */
+
+.letracolor {
+    color: white;
+    font-weight:bold;
+}
+
+.letracolor:hover {
+    color: white;
+    font-weight:bold;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.texto-encima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    /* background: linear-gradient(to right, #0c082caa, #0d0b2c8d, #13133387); */
+    
+}
+
+.letras-slaide{
+    font-size: 40px;
+    color: #ffffff;
+}
+.letras-slaide-p {
+    font-size: 20px;
+}
+.btn-primarys {    
+    text-align: center;    
+    width: 220px;
+    border:2px solid #17c3d6c4 ;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition:all .5s ease;
+}
+.btn-primarys:hover {
+    color: #264a4ec1;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.483);
+    border-color: transparent;
+}
+
+.card-body{
+    text-align: center;
+    padding: 6%;
+}
+.color-div-diferente{
+    background-color:#3539399f ;
+    padding: 35px;
+    margin-top:-20px ;
+}
+.containers-center {
+    margin: 40px 100px 0px 100px;
+    text-align: center;
+}
+.nuestro-Grupo {
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    color:  #333366;
+
+}
+.galeria-port {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.jumbotron{
+    margin-top: 5%;
+}
+.imagenesExtre{
+    border-radius: 10px;
+}
+/* footer */
+.container-footer {
+    width: 100%;
+    background:#333366;
+    padding: 10px;
+    
+}
+
+.copyright {
+    color: white;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.information {
+    text-align: right;
+}
+
+.information a {
+    text-decoration: none;
+    color: white;
+}
+.ultimasTajetas{
+    margin-bottom: 4%;
+}

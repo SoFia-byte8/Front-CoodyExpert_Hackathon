@@ -1,0 +1,351 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+  <div class="container">
+    <a class="navbar-brand" routerLink="../Home_Empresa/inicioEmpr.html">
+      <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/crearOferta">Crear Oferta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/modificarDatos/company">Editar Datos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/losMejoresProgramadores/reclutar">Buscar Desarrolladores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/notificacion/company">Notificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/perfil/Empresa">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="sec-flex">
+    <div id="perfil-head">
+  
+      <!--Una Capa Sobre el perfil -->
+      <div class="header btn-light" style="height: 400px;">
+        <img  src="assets/image/modificardatosEmpresa/Base.jpg" height="400px" width="100%" alt="">
+        <!-- Código para Boton de Despliegue -->
+        <button class="mui-btn">
+          <div class="text btn-light">Cambiar Fondo</div>
+        </button>
+      </div>
+  
+      <div class="avatar"> 
+       </div>
+  
+      <div class="usuarioPerfil">
+  
+        <!-- "Editar Logo" -->
+        <button class="mui-btn mui-btn-primary">
+          <div class="text">Editar Logo</div>
+        </button>
+  
+        <button class="mui-btn mui-btn-primary">
+          <div class="text">No Guardar y Regresar</div>
+        </button>
+  
+      </div>
+  
+      <div class="container">
+        <!-- Título del Perfil, Datos Personales parte Superior del Usuario-->
+        <div class="nombreU">
+          <h1 class="One">Nombre De La Empresa</h1>
+        </div>
+  
+        <form class="mui-form">
+          <h1 class="titulos"> Descripción Empresarial</h1><br>
+          <div class="form-group col-md-12">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+  
+        <form class="form-dates">
+          <h1 class="titulos">Informacion Personal</h1>
+  
+  
+          <div class="form-group col-md-6 mui-textfield
+                        mui-textfield--float-label">
+            <label for="inputAddress">Nombre Gerente</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese Nombre" required>
+          </div>
+          <div class="form-group col-md-6 mui-textfield
+                        mui-textfield--float-label">
+            <label for="inputAddress2">Apellido Gerente</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese Apellido" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="@example.com">
+          </div>
+        </form>
+  
+  
+  
+        <h1 class="titulos">Informacion De la Empresa</h1>
+        <hr><br>
+        <div class="container">
+          <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="Nom">Nombre Empresa:</label>
+                <input type="text" class="form-control" id="Nom" value="" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="Nit">Nit:</label>
+                <input type="number" class="form-control" id="Nit" value="" required>
+              </div>
+            </div>
+  
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="Num">Telefono:</label>
+                <input type="number" class="form-control" id="Num" value="" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="Num">Telefono Opcional:</label>
+                <input type="number" class="form-control" id="Num" value="" required>
+              </div>
+            </div>
+  
+  
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="ciu">Ciudad:</label>
+  
+                <select id="inputCity" class="form-control">
+                  <option selected>Bogotá D.C</option>
+                  <option>Medellín</option>
+                  <option>Calí</option>
+                  <option>Barranquilla</option>
+                  <option>Cartagena</option>
+                  <option>Bucaramanga</option>
+                  <option>Manizales</option>
+                  <option>Pereira</option>
+                  <option>Cúcuta</option>
+                  <option>Ibagué</option>
+                  <option>Valledupar</option>
+                  <option>Boyáca</option>
+                  <option>Pasto</option>
+                  <option>Armenia</option>
+                  <option>Villavicencio</option>
+                  <option>Neiva</option>
+                  <option>Soacha</option>
+                  <option>Soledad</option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="Dir">Dirección:</label>
+                <input type="text" class="form-control" id="Dir" value="" required>
+              </div>
+            </div>
+  
+            <div class="form-row">
+              <div class="form group col-md-8 mb-5">
+                <label for="inputEmail4">Email:</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+            </div>
+  
+            <div class="form-row">
+              <div class="form group col-md-8 mb-5">
+                <label for="Re">Reportes:</label>
+                <textarea class="form-control" id="Re" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+  
+          <div class="form-group col-md-8">
+            <label for="inputPrograma2">¿Para Que Busca Personal?</label>
+            <input type="text" class="form-control" id="inputPrograma2">
+          </div><br><br>
+  
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="radio" aria-label="Radio button for following text input">
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Acepta las políticas de privacidad</button>
+          </div>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Políticas De Privacidad</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="font-size: 12px;">
+                  El presente Política de Privacidad establece los términos en que CoodyExpert usa y protege la
+                  información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía
+                  está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de
+                  información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se
+                  empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede
+                  cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente
+                  esta página para asegurarse que está de acuerdo con dichos cambios.
+                  <br>
+                  <br>
+                  Información que es recogida
+                  <br>
+                  <br>
+                  Nuestro sitio web podrá recoger información personal por ejemplo: Nombre, información de contacto como
+                  su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser
+                  requerida información específica para procesar algún pedido o realizar una entrega o facturación.
+                  <br>
+                  <br>
+                  Uso de la información recogida
+                  <br>
+                  <br>
+                  Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible,
+                  particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar
+                  nuestros productos y servicios. Es posible que sean enviados correos electrónicos periódicamente a
+                  través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que
+                  consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos
+                  serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.
+                  <br>
+                  <br>
+                  CoodyExpert está altamente comprometido para cumplir con el compromiso de mantener su información
+                  segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no
+                  exista ningún acceso no autorizado.
+                  <br>
+                  <br>
+                  Cookies
+                  <br>
+                  <br>
+                  Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse
+                  en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información
+                  respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que
+                  tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el
+                  mejor servicio personalizado de su web.
+                  <br>
+                  <br>
+                  Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su
+                  frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información
+                  se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su
+                  ordenador. Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no
+                  dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la
+                  proporcione directamente, . Usted puede aceptar o negar el uso de cookies, sin embargo la mayoría de
+                  navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted
+                  puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que
+                  no pueda utilizar algunos de nuestros servicios.
+                  <br>
+                  <br>
+                  Enlaces a Terceros
+                  <br>
+                  <br>
+                  Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que
+                  usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es
+                  redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus
+                  datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad
+                  por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.
+                  <br>
+                  <br>
+                  Control de su información personal
+                  <br>
+                  <br>
+                  En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es
+                  proporcionada a nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta
+                  de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. En caso de
+                  que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier
+                  momento.
+                  <br>
+                  <br>
+                  Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su
+                  consentimiento, salvo que sea requerido por un juez con un orden judicial.
+                  <br>
+                  <br>
+                  CoodyExpert se reserva el derecho de cambiar los términos de la presente Política de Privacidad en
+                  cualquier momento.
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-dark">Actualizar</button>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div class="container mt-5 p-4">
+    <h1 class="text-center mb-5 border-bottom border-success">Portafolio</h1>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img src="assets/image/modificardatosEmpresa/equipo.jpg" class="card-img-top">
+          <div class="card-body">
+          </div>
+          <div class="card-body">
+            <a class="card-link btn btn-dark">ELIMINAR</a>
+            <a class="card-link btn btn-dark">AGREGAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/image/modificardatosEmpresa/empresa.jpg" class="card-img-top">
+          <div class="card-body">
+          </div>
+          <div class="card-body">
+            <a class="card-link btn btn-dark">ELIMINAR</a>
+            <a class="card-link btn btn-dark">AGREGAR</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="assets/image/modificardatosEmpresa/trabajo.jpg" class="card-img-top">
+          <div class="card-body">
+          </div>
+          <div class="card-body">
+            <a class="card-link btn btn-dark">ELIMINAR</a>
+            <a class="card-link btn btn-dark">AGREGAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-footer">
+    <div class="flex">
+      <a routerLink="https://www.facebook.com/Coody-Expert-100691765174664/?modal=admin_todo_tour"
+        style="color: rgb(245, 245, 245); font-size: 40px; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
+      <a routerLink="https://www.instagram.com/coodyexpert/"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
+      <a routerLink="https://www.youtube.com/channel/UCJjQWwyHmKPzh4hgrHy9NaQ"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+      DATOS &copy 2020 | <a routerLink="InicioAll.html">Coody Expert</a>
+    </div>
+  
+    <div class="information">
+      <a routerLink=""> Información Compañia </a> |
+      <a routerLink=""> Privacidad y Politica </a> |
+      <a routerLink=""> Terminos y Condiciones </a> |
+    </div>
+
+  </div>

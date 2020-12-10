@@ -1,0 +1,209 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+  <div class="container">
+    <a class="navbar-brand" routerLink="../inicioUsuario/inicioUsuario.html">
+      <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px" style="margin-left:40%">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/notificacion/User">Notificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/ModificarDatos/User">Modificar Datos</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/perfil/User">Perfil</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/">Salir</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link letracolor btn btn-primary p-1 " routerLink="tarjetas-user" >Premium!</a>
+          </li><br>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="sec-flex">
+
+    <div id="perfil-head">
+  
+      <!--Una Capa Sobre el perfil -->
+      <div class="header btn-light" style="background-image: url('assets/image/desordenImg/Base.jpg');">
+        <!-- Código para Boton de Despliegue -->
+        <button class="mui-btn">
+          <div class="text btn-light">Cambiar</div>
+        </button>
+      </div>
+      <div class="avatar">
+      </div>
+      <div class="usuarioPerfil" >
+  
+        <!-- "Editar Perfil" -->
+        <button class="mui-btn mui-btn-dark" >
+          <div class="text">Editar Foto</div>
+        </button>
+        <!--  "Alterar Password" -->
+        <button class="mui-btn mui-btn-dark">
+          <div class="text">No Guardar y Regresar</div>
+        </button>
+      </div>
+    </div>
+  
+  
+    <div class="container">
+      <!-- Título del Perfil, Datos Personales parte Superior del Usuario-->
+      <div class="nombreU">
+        <h1 class="One">Nombre Completo del Usuario </h1>
+      </div>
+  
+      <form class="mui-form">
+        <h1 class="titulos">Postulante Descripción</h1>
+        <div class="form-group col-md-12">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div><br>
+      </form>
+  
+      <h1 class="titulos">Nivel De Saberes</h1>
+      <hr>
+  
+      <div class="expnivel" style="margin-left:250px;">
+        <!-- Softwares do Utilizador -->
+        <div class="nivel 1">
+          <br><span><b>One</b><br></span><br>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck" required> <b>Avanzado</b></label><br>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="nivel 2">
+        <br><span><b>Two</b><br></span><br>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck" required> <b>Básico</b></label><br>
+        </div>
+      </div>
+  
+      <div class="nivel 3">
+        <br><span><b>Three</b><br></span><br>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck" required> <b>Medio</b></label><br>
+        </div>
+      </div>
+    </div>
+  
+  
+    <form class="form-dates" >
+      <h1 class="titulos">Información Vacante</h1>
+      <hr><br><br>
+      <div class="form-group col-md-6 mui-textfield mui-textfield--float-label">
+        <label for="inputAddress">Nombre</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese Nombre" required>
+      </div>
+      <div class="form-group col-md-6 mui-textfield mui-textfield--float-label">
+        <label for="inputAddress2">Apellido</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese Apellido" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="@example.com">
+      </div><br>
+      <div class="form-group col-md-4">
+        <label for="exampleFormControlFile1">Ingresar Hoja de Vida</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div><br><br>
+    </form>
+  
+    <form class="form-dates2" >
+      <h1 class="titulos">Informacion Personal</h1>
+      <hr>
+      <div>
+        <div class="form-group col-md-4">
+          <label for="inputdireccion3">Dirección</label>
+          <input type="text" class="form-control" id="inputdireccion3">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputMovil4">Número Contacto</label>
+          <input type="text" class="form-control" id="inputMovil4">
+        </div><br>
+        <div class="form-row col-md-6">
+          <div class="form-group col-md-4">
+            <label for="inputState">Ciudad</label>
+            <select id="inputCity" class="form-control">
+              <option selected>Bogotá D.C</option>
+              <option>Medellín</option>
+              <option>Calí</option>
+              <option>Barranquilla</option>
+              <option>Cartagena</option>
+              <option>Bucaramanga</option>
+              <option>Manizales</option>
+              <option>Pereira</option>
+              <option>Cúcuta</option>
+              <option>Ibagué</option>
+              <option>Valledupar</option>
+              <option>Boyáca</option>
+              <option>Pasto</option>
+              <option>Armenia</option>
+              <option>Villavicencio</option>
+              <option>Neiva</option>
+              <option>Soacha</option>
+              <option>Soledad</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPrograma2">Lenguajes de
+              Programación</label>
+            <input type="text" class="form-control" id="inputPrograma2">
+          </div>
+        </div><br><br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck" required> Acépto Términos y Condiciones</label><br>
+        </div><br>
+        <button type="submit" class="btn btn-dark">Guardar cambios</button>
+      </div>
+    </form>
+  
+  </section>
+  <div class="container-footer">
+    <div class="flex">
+      <a routerLink="https://www.facebook.com/Coody-Expert-100691765174664/?modal=admin_todo_tour"
+        style="color: rgb(245, 245, 245); font-size: 40px; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
+      <a routerLink="https://www.instagram.com/coodyexpert/"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
+      <a routerLink="https://www.youtube.com/channel/UCJjQWwyHmKPzh4hgrHy9NaQ"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+      DATOS &copy 2020 | <a routerLink="InicioAll.html">Coody Expert</a>
+    </div>
+  
+    <div class="information">
+      <a routerLink=""> Información Compañia </a> |
+      <a routerLink=""> Privacidad y Politica </a> |
+      <a routerLink=""> Terminos y Condiciones </a> |
+    </div>
+
+  </div>

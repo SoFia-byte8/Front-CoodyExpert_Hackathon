@@ -1,0 +1,39 @@
+.bg-pink {
+    background-color: transparent;
+    transition: all 1.5s ease;
+    color: white;
+    font-weight:bold;
+}
+
+.main {
+    background-color: #333366;
+    color: #ffffff;
+}
+
+.letracolor {
+    color: white;
+    font-weight:bold;
+}
+
+.letracolor:hover {
+    color: white;
+    font-weight:bold;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+}
+.btn-primary {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    border-color: white;
+    background: linear-gradient(180deg, #32c953d5 0%, #46c7d8c4 100%);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    justify-content: center;
+}
+

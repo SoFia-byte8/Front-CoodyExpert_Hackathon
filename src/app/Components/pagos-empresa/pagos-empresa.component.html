@@ -1,0 +1,235 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+  <div class="container">
+    <a class="navbar-brand" routerLink="../inicioUsuario/inicioUsuario.html">
+      <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px" style="margin-left:40%">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/notificacion/User">Notificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/ModificarDatos/User">Modificar Datos</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor" routerLink="/perfil/User">Perfil</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link letracolor " routerLink="/">Salir</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link letracolor btn btn-primary p-1 " routerLink="tarjetas-user" >Premium!</a>
+          </li><br>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+    <br><br><br>
+    <h1 class="text-center">¡TENEMOS LOS MEJORES PLANES PARA TI!</h1>
+    <br><br><br>
+    <div class="card card1" style="width: 50rem;">
+    <div class="row">
+      <!-- *ngFor="let b of allPlanes" -->
+        <div class="col mb-4" >
+           
+            <div class="card " style="width: 18rem;">
+                <!--Lo que va hacer es que va a integrar y guardar cada dato de los libros en b-->
+                <img src="assets/image/desordenImg/Medium.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">MEDIUM</h5>
+                    <p class="card-text">Aqui tendras la opcion de publicar 1 oferta laboral por mes, realizar examen o cargarlo y
+                        recibir notificaciones. 
+                        <br>
+                        <br>
+                        $30.000 Pesos Mensuales
+                    </p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#medium">Comenzar</a>
+                </div>
+            </div>
+        </div>  
+        <!-- *ngFor="let b of allPlanes" -->
+            <div class="col mb-4" >
+                <div class="card" style="width: 18rem;">
+                    <!--Lo que va hacer es que va a integrar y guardar cada dato de los libros en b-->
+                    <img src="assets/image/desordenImg/PremiumCompany.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PREMIUM</h5>
+                        <p class="card-text">Aqui podras publicar ofertas laborales ilimitadas, realizar examen o cargarlo, recibir notificaciones,
+                            crear perfil para que conozcan mas la empresa y reclutar a los mejores programadores.
+                        <br>
+                    <br>
+                    $50.000 Pesos Mensuales
+                </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#premium">Comenzar</a>
+                    </div>
+                </div>
+
+               
+                <div class="modal fade" id="premium" tabindex="-1" aria-labelledby="premiumLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title" id="premiumLabel">PREMIUM</h2>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body backgoud">
+                          <!-- grid -->
+                          <div class="container cardl">
+                            <div class="row">
+                              <div class="col-sm-8 mt-2">
+                               <h5>Selecciona tu forma de pago</h5>   
+                                  <i class="fab fa-cc-visa icon-redes"></i>
+                                  <i class="fab fa-cc-mastercard icon-redes "></i>
+                                  <div>
+                                    <br>
+                                    <form >
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo*" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Numero Tarjeta*" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Codigo de Seguridad (CVV)*" required>
+                                      </div>
+                                      <div class="card ">
+                                        <div class="card-body">
+                                          Plan Premium:
+                                          <br>
+                                          $50.000 al mes
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                          <input type="radio" aria-label="Radio button for following text input" >
+                                          </div>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal ">
+                                        Acepta las políticas de privacidad</button>
+                                        </div>
+                                
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                     <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Terminos y Condiciones</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body" style="font-size: 12px;">
+                                        Al hacer clic en el botón Iniciar, aceptas nuestros Términos de uso y nuestra Declaración de privacidad,
+                                         aceptas que CoodyExpert continuará tu plan de manera automática y hasta que lo canceles te facturará el 
+                                         cargo mensual (actualmente de $ 30.000) a través de la forma de pago elegida. Puedes cancelar la membresía en cualquier
+                                          momento para evitar cargos en el futuro.
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <br>
+                                      <button type="submit" class="btn btn-primary">Iniciar</button>
+                                      <p>Para iniciar es obligatorio Aceptar los terminos y condiciones</p>
+                                    </form>
+                                  </div>
+                              </div>    
+                            </div>    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="medium" tabindex="-1" aria-labelledby="mediumLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title" id="mediumLabel">MEDIUM</h2>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body backgoud">
+                          <!-- grid -->
+                          <div class="container cardl">
+                            <div class="row">
+                              <div class="col-sm-8 mt-2">
+                               <h5>Selecciona tu forma de pago</h5>   
+                                  <i class="fab fa-cc-visa icon-redes"></i>
+                                  <i class="fab fa-cc-mastercard icon-redes "></i>
+                                  <div>
+                                    <br>
+                                    <form >
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo*" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Numero Tarjeta*" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Codigo de Seguridad (CVV)*" required>
+                                      </div>
+                                      <div class="card ">
+                                        <div class="card-body">
+                                          Plan Medium:
+                                          <br>
+                                          $30.000 al mes
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="input-group">
+                                        <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                          <input type="radio" aria-label="Radio button for following text input" >
+                                          </div>
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                                        Acepta las políticas de privacidad</button>
+                                        </div>
+                                
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                     <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel1">Terminos y Condiciones</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body" style="font-size: 12px;">
+                                        Al hacer clic en el botón Iniciar, aceptas nuestros Términos de uso y nuestra Declaración de privacidad,
+                                         aceptas que CoodyExpert continuará tu plan de manera automática y hasta que lo canceles te facturará el 
+                                         cargo mensual (actualmente de $ 30.000) a través de la forma de pago elegida. Puedes cancelar la membresía en cualquier
+                                          momento para evitar cargos en el futuro.
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <br>
+                                      <button type="submit" class="btn btn-primary">Iniciar</button>
+                                      <p>Para iniciar es obligatorio Aceptar los terminos y condiciones</p>
+                          
+                                    </form>
+                                  </div>
+                              </div>    
+                            </div>    
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>

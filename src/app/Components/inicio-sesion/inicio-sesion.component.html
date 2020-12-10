@@ -1,0 +1,89 @@
+<div class="container containerprincipal">
+  <div class="row">
+    <div class="col-lg-6 ">
+      <div>
+        <img src="assets/image/inicio-sesion/coodyBlack.png" alt="" width="250px">
+      </div>
+      <section>
+        <h2 class="mt-5" style=" text-align: center; font-weight: bold; font-size: 30px; margin-left: -100px;">Inicio
+          Sesión</h2>
+      </section>
+
+      <form [formGroup]="loginForm" (ngSubmit)="login()" (ngSubmit)="loginCompany()">
+        <div class="form-group mt-4">
+          <label for="inputAddress">Email</label>
+          <input formControlName="email" type="text" class="form-control inputPeque" id="correoinput" placeholder="Correo" required>
+        </div>
+        <div class="form-group mt-3">
+          <label for="inputAddress">Contraseña</label>
+          <input formControlName="password" type="password" class="form-control inputPeque" id="contrainput" placeholder="Contraseña" required>
+        </div>
+
+        <div class="divBoton">
+          <!-- <input type="button" class="btn colorBoton mt-3" value="iniciarSesion"> -->
+          <button class="btn colorBoton mt-3"> Ingresar </button>
+          <i class="fas fa-key"></i>
+          <a routerLink="/recuperarpassword" class="olvidoContrase">olvidaste tu clave</a>
+        </div>
+        <a routerLink="/"><i class="fas fa-arrow-left mt-4"></i></a>
+      </form>
+
+
+    </div>
+    <div class="col-lg-6 imagen"
+      style="background: linear-gradient(to right, #334d50d9, #1d1d1a92), url(assets/image/inicio-sesion/caferegistro.jpeg);">
+      <div class="caption ">
+
+        <section>
+          <h3 class=" letraImagen">!No te has registrado!</h3>
+        </section>
+        <div class="textoicon">
+          <div class="textLadoIcon">
+            <i class="far fa-check-circle">
+            </i>
+            <p class="mensajeparrafo"> Hazlo en menos de 5 minutos </p>
+          </div>
+          <div class="textLadoIcon">
+            <i class="far fa-check-circle">
+            </i>
+            <p class="mensajeparrafo"> Solo te pediremos unos datos</p>
+          </div>
+          <div class="textLadoIcon">
+            <i class="far fa-check-circle">
+            </i>
+            <p class="mensajeparrafo"> Una vez registrado encontráras los mejores talentos en desarrollo
+              web </p>
+          </div>
+        </div>
+        <button type="submit" class="btn colorRegistro "><a data-toggle="modal" data-target="#exampleModalCenter" routerLink="./Registrar_Usuario/registrarUsuario.html"
+            style="text-decoration: none; color:white" >
+            Registrate!</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade seconmodal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Registrate !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body backgoud">
+        <div class="flex">
+          <a class="btn btn-primarys2 btn-lg" href="/registroUser" role="button">
+            ¡Postulate! </a>
+          <a class="btn btn-primarys2 btn-lg" href="/registroCompany" role="button">
+            Eres Empresa! </a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

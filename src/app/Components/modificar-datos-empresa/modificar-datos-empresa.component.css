@@ -1,0 +1,556 @@
+.contenedor-principal-elearning {
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	font-family: 'Oswald', sans-serif;
+}
+
+.bg-pink {
+	color: white;
+	background-color: #2d2d5a;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.letracolor {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.letracolor:hover {
+	color: white;
+	font-weight: bold;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.titulos {
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+	color: rgb(80, 77, 77);
+	font-family: 'Quicksand', sans-serif;
+}
+
+.form-group {
+	flex-wrap: wrap;
+	justify-content: right;
+	align-content: right;
+}
+
+.form-dates,
+.form-dates2 {
+	border: 100px rgb(255, 255, 255) solid;
+}
+
+.One {
+	text-align: center;
+}
+
+.col {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bimenu {
+	display: none;
+}
+
+.bimenu button {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+	border-radius: 100%;
+	padding: 4px 15px 0px 15px;
+	bottom: 15px;
+	right: 5px;
+	transition: 0.2s;
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.bimenu i {
+	color: #333;
+	font-size: 18px;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	border-bottom: 3px solid #fff;
+	background-color: #ffffff;
+	background-position: center;
+	background-color: #ffffff;
+	/* background-image: url("./Imagenes/Base.jpg"); */
+	background-size: cover;
+}
+
+.header button {
+	position: relative;
+	float: right;
+	width: 60px;
+	height: 50px;
+	margin-right: 15px;
+	border-radius: 10%;
+	padding: 0px 15px 0px 15px;
+	top: 130px;
+	right: 5px;
+	transition: 0.2s;
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.header button:hover {
+	width: 180px;
+	height: 50px;
+	margin-right: 15px;
+	border-radius: 1000px;
+	padding: 0px 15px 0px 15px;
+	bottom: 5px;
+	right: 5px;
+	transition: 0.2s;
+}
+
+.header button i {
+	float: right;
+	color: #333;
+	font-size: 18px;
+}
+
+.header button:hover i {
+	display: none;
+	transition: 1s;
+}
+
+.header button .text {
+	display: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	transition: 1s;
+}
+
+.header button:hover .text {
+	display: inline-block;
+	transition: 1s;
+}
+
+.avatar {
+	z-index: 1;
+	position: relative;
+	margin: auto;
+	margin-top: -120px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: 4px solid rgba(94, 91, 91, 0.856);
+	/* background: url("assets/image/Modificar-Datos-Empresa/Bg.png"); */
+	background-size: cover;
+	background-position: center;
+}
+
+.content {
+	position: relative;
+}
+
+.usuarioPerfil {
+	position: absolute;
+	width: 100%;
+	margin-top: -77px;
+}
+
+.usuarioPerfil button {
+	z-index: 0;
+	position: relative;
+	margin: auto;
+	margin-left: 400px;
+	width: 200px;
+	height: 30px;
+	/* padding: 0px 35px 0px 5px; */
+	/* -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2); */
+	box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.usuarioPerfil button:nth-child(2) {
+	margin-left: 70px;
+	padding: 0px 5px 0px 35px;
+}
+
+.usuarioPerfil button .text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.titulos h1 {
+	font-family: 'Cabin', sans-serif;
+	font-weight: 700;
+	color: #444;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.expnivel {
+	display: table-cell;
+	margin: auto;
+	width: 440px;
+	height: auto;
+}
+
+.nivel {
+	position: relative;
+	display: inline-block;
+	margin: auto;
+	width: 120px;
+	height: 120px;
+	line-height: 1.2;
+	margin: 20px 0px 0px 0px;
+	border-radius: 100%;
+	background-color: rgba(29, 202, 179, 0.884);
+}
+
+.nivel:nth-child(2) {
+	margin: 20px 40px 0px 40px;
+}
+
+.nivel span {
+	font-size: 10px;
+	font-weight: 500;
+	color: rgb(10, 51, 56);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nivel span b {
+	font-size: 17px;
+	font-weight: 900;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nivel i {
+	margin-top: 8px;
+	color: #fff;
+}
+
+.nivel .exp {
+	width: 60%;
+	padding: 2px 5px 1px 5px;
+	background-color: #fff;
+	border: 2px solid rgb(40, 219, 160);
+	border-radius: 100px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.container {
+	padding: 5px 0px 10px 90px;
+}
+
+.nivel .exp b {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.infocandidato {
+	width: 500px;
+	margin: auto;
+}
+
+.infocandidato textarea {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #444;
+}
+
+.infocandidato input {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #444;
+}
+
+.infocandidato select {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #444;
+}
+
+.infocandidato button {
+	font-family: 'Cabin', sans-serif;
+	font-size: 15px;
+	font-weight: 800;
+}
+
+.infocandidato label {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+	font-weight: 800;
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 1000px) {
+	.bimenu {
+		display: block;
+	}
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 550px) {
+
+	.header button:hover {
+		position: relative;
+		float: right;
+		width: 50px;
+		height: 50px;
+		margin-right: 15px;
+		border-radius: 100%;
+		padding: 0px 15px 0px 15px;
+		top: 130px;
+		right: 5px;
+		transition: 0.2s;
+		-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+		box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+	}
+
+	.header button:hover i {
+		display: inline-block;
+		color: #333;
+		font-size: 18px;
+	}
+
+	.header button:hover .text {
+		display: none;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		transition: 1s;
+	}
+
+	.usuarioPerfil button {
+		z-index: 0;
+		position: relative;
+		margin: auto;
+        margin-left: 0px;
+		width: 140px;
+		height: 40px;
+		border-radius: 1000px;
+		padding: 0px 35px 0px 10px;
+		-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+		box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+	}
+
+	.usuarioPerfil button:nth-child(2) {
+		margin-left: 100px;
+        padding: 0px 15px 0px 35px;
+        
+	}
+
+	.usuarioPerfil button .text {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	.usuarioPerfil h1 {
+		font-family: 'Cabin', sans-serif;
+		color: #444;
+		font-size: 30px;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.usuarioPerfil p {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #777;
+	}
+}
+
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 450px) {
+
+	.header {
+		position: relative;
+		width: 100%;
+		height: 120px;
+		border-bottom: 3px solid #fff;
+		/* background-position: center; */
+		
+		/* background-image: url("assets/image/Modificar-Datos-Empresa/Base.jpg"); */
+		/* background-size: cover; */
+	}
+
+	.header button,
+	button:hover {
+		position: relative;
+		float: right;
+		width: 50px;
+		height: 50px;
+		margin-right: 15px;
+		border-radius: 100%;
+		padding: 0px 15px 0px 15px;
+		top: 50px;
+		right: 5px;
+		transition: 0.2s;
+		-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+		box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+	}
+
+	.header button:hover i {
+		display: inline-block;
+		color: #333;
+		font-size: 18px;
+	}
+
+	.header button:hover .text {
+		display: none;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		transition: 1s;
+	}
+
+	.container-footer {
+		width: 100%;
+		background: #1F1E1E;
+		padding: 10px;
+	}
+
+	.main__about__description {
+		flex-wrap: wrap;
+	}
+
+	.container-footer {
+		width: 100%;
+		background: #1F1E1E;
+		padding: 10px;
+	}
+
+	.footer {
+		max-width: 1200px;
+		display: flex;
+		margin: auto;
+		justify-content: space-between;
+	}
+
+	.copyright {
+		color: white;
+	}
+
+	.copyright a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.information {
+		text-align: right;
+	}
+
+	.information a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.avatar {
+		z-index: 1;
+		position: relative;
+		margin: auto;
+		margin-top: -50px;
+		width: 120px;
+		height: 120px;
+		border-radius: 100%;
+		border: 4px solid rgba(255, 255, 255, 1);
+		/* background: url(""); */
+		background-size: cover;
+		background-position: center;
+	}
+
+	.usuarioPerfil button {
+		z-index: 0;
+		position: relative;
+		margin: auto;
+		margin-left: 0px;
+		width: 140px;
+		height: 40px;
+		border-radius: 1000px;
+		padding: 0px 35px 0px 10px;
+		-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+		box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .2);
+	}
+
+	.usuarioPerfil button:nth-child(2) {
+		margin-left: 50px;
+		padding: 0px 15px 0px 35px;
+	}
+
+	.usuarioPerfil button .text {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 11px;
+		font-weight: 600;
+	}
+
+	.usuarioPerfil h1 {
+		font-family: 'Cabin', sans-serif;
+		color: #444;
+		font-size: 25px;
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+.container-footer {
+	width: 100%;
+	background: #333366;
+	padding: 10px;
+
+}
+
+.copyright {
+	color: white;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: white;
+}
+
+.information {
+	text-align: right;
+}
+
+.information a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Estilo para dispositivos móviles */
+@media screen and (max-width: 250px) {
+	.avatar {
+		z-index: 1;
+		position: relative;
+		margin: auto;
+		margin-top: -50px;
+		width: 90px;
+		height: 90px;
+		border-radius: 100%;
+		border: 4px solid rgba(255, 255, 255, 1);
+		/* background: url(""); */
+		background-size: cover;
+		background-position: center;
+	}
+}

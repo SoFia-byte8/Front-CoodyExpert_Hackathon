@@ -1,0 +1,185 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="logo" width="130px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+      <ul class="navbar-nav ml-auto">
+        <a class="navbar-brand" routerLink="/crearOferta" >
+          <i class="fas fa-arrow-circle-left"></i>
+          Volver a crear oferta
+
+        </a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<form action="">
+  <section>
+    <div class="form-row" style="margin-top: 95px;">
+      <div class="col-md-6 mb-3">
+        <label for="validationTooltip01">Titulo examen</label>
+        <input formControlName="tituloExamen" type="text" class="form-control" id="validationTooltip01" value=""
+          required>
+        <div class="valid-tooltip">
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="exampleFormControlTextarea1">Descripcion Examen</label>
+        <textarea formControlName="descripcionExamen" class="form-control" id="exampleFormControlTextarea1"
+          rows="3">Escribir la descripcion del examen</textarea>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationTooltip01">Cargo</label>
+        <input formControlName="cargo" type="text" class="form-control" value=""
+          required>
+        <div class="valid-tooltip">
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationTooltip01">Salario</label>
+        <input formControlName="salario" type="text" class="form-control" value=""
+          required>
+        <div class="valid-tooltip">
+        </div>
+      </div>
+    </div>
+    <div class="form-row" >
+      <div class="form-group col-md-12" >
+        <label>Empresa que realiza el examen</label>
+        <input formControlName="empresa" type="text" class="form-control" value=""
+          required>
+        <div class="valid-tooltip">
+        </div>
+        <!-- <input formControlName="empresa" id="empresa" type="hidden" class="form-control" >
+        <div class="row">
+          <div class="col" *ngFor="let g of allCompany">
+              <input type="checkbox" value="{{c._id}}" (click)="saveCompany($event)">
+              <label >{{c.name}}</label>
+          </div>
+        </div> -->
+      </div>
+  </div>
+    <form>
+
+      <h3>Personalizado</h3>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Ingrese el link del examen personalizado</label>
+        <input formControlName="linkExamen" type="text" class="form-control" id="exampleFormControlInput1"
+          placeholder="Ingrese link correspondiente"
+          style=" border:transparent; border-bottom:3px solid rgb(15, 92, 105);">
+      </div>
+    </form>
+
+    <button type="submit" class="btn btn-primary my-1"> <a routerLink="/crearOferta"
+        style="text-decoration: none; color: white;">Enviar</a></button>
+  </section>
+
+  <!--formulariopreguntas-->
+  <!-- section>
+    <input class="form-control form-control-lg" type="text" placeholder="Primera pregunta">
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Opcion 1</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Opcion 2</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+      <label class="form-check-label" for="inlineRadio3">Respuesta correcta</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Opcion 3</label>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea2">Segunda pregunta</label>
+      <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+    </div>
+
+
+    <input class="form-control form-control-lg" type="text" placeholder="Tercera pregunta">
+
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Opcion 1</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Opcion 2</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+      <label class="form-check-label" for="inlineRadio3">Respuesta correcta</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    </div>
+
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea3">Titulo</label>
+      <textarea class="form-control" id="exampleFormControlTextarea3" placeholder="Escriba aqui tu texto."
+        rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea3">Cuarta pregunta</label>
+      <textarea class="form-control" id="exampleFormControlTextarea3" placeholder="Escriba aqui tu texto."
+        rows="3"></textarea>
+    </div>
+
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference:</label>
+    <label for="exampleFormControlTextarea3">Titulo</label>
+
+    <form>
+      <h3>Personalizado</h3>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Emapen personalizado de la empresa </label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Ingrese el link del examen personalizado</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1"
+          placeholder="Ingrese link correspondiente"
+          style=" border:transparent; border-bottom:3px solid rgb(15, 92, 105);">
+      </div>
+    </form>
+    <br>
+    formulariofinal
+    <button type="submit" class="btn btn-primary my-1"> <a href="../Ofertas/Ofertas.html"
+        style="text-decoration: none; color: white;">Enviar</a></button>
+  </section> -->
+</form>
+
+<div class="container-footer">
+  <div class="flex">
+    <a routerLink="https://www.facebook.com/Coody-Expert-100691765174664/?modal=admin_todo_tour"
+      style="color: rgb(245, 245, 245); font-size: 40px; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
+    <a routerLink="https://www.instagram.com/coodyexpert/"
+      style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
+    <a routerLink="https://www.youtube.com/channel/UCJjQWwyHmKPzh4hgrHy9NaQ"
+      style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div class="copyright">
+    DATOS &copy 2020 | <a routerLink="InicioAll.html">Coody Expert</a>
+  </div>
+
+  <div class="information">
+    <a routerLink=""> Información Compañia </a> |
+    <a routerLink=""> Privacidad y Politica </a> |
+    <a routerLink=""> Terminos y Condiciones </a> |
+  </div>
+
+</div>

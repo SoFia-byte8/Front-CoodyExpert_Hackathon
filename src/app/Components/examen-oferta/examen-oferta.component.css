@@ -1,0 +1,52 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:#333366;
+}
+
+.navbar-brand{
+    color:#ffffff;
+}
+.navbar-brand:hover{
+    color:#ffffff;
+}
+
+form{
+    width:70%;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+form section {margin-top: 4%;}
+
+form div{margin-top: 4%;}
+/* cambios Geral */
+
+.bg-pink {
+    background-color: #333366dc;
+    /* background-color: transparent; */
+    transition: all 1.5s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.main {
+    background-color: #333366;
+    color: #ffffff;
+}
+
+.letracolor {
+    color: white;
+    font-weight: bold;
+}
+
+.letracolor:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+

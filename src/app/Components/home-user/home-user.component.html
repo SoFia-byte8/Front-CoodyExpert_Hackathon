@@ -1,0 +1,394 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+    <div class="container">
+      <a class="navbar-brand" routerLink="../inicioUsuario/inicioUsuario.html">
+        <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px" style="margin-left:40%">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/notificacion/User">Notificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor" routerLink="/ModificarDatos/User">Modificar Datos</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link letracolor" routerLink="/perfil/User">Perfil</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/">Salir</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link letracolor btn btn-primary p-1 " routerLink="tarjetas-user" >Premium!</a>
+            </li><br>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--carousel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item height-carousel active">
+        <img src="assets/image/homeUser/Programacion24.jpg" class="d-block w-100" alt="cod">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide"><b>Programa tu trabajo ideal</b></h5>
+  
+          </div>
+  
+        </div>
+      </div>
+      <div class="carousel-item height-carousel">
+        <img src="assets/image/homeUser/Programacion16.jpg" class="d-block w-100" alt="off">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide"> <b>Programa tu trabajo ideal</b> </h5>
+  
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item height-carousel">
+        <img src="assets/image/homeUser/Programacion29.jpg" class="d-block w-100" alt="prog">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide" style="color: black;"> <b>Programa tu trabajo ideal</b> </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" routerLink="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" routerLink="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--Imagen con Ondulación-->
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #ffffff;"></path>
+      </svg></div>
+  </div>
+  
+  
+  
+  <!--Cards-->
+  <!--Articulo con un Card-->
+  <section>
+  
+    <h3 style="text-align: center;">Descubre las mejores ofertas laborales!</h3>
+    <!-- buscador -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm-8">
+          <div class="container mt-5 ">
+            <input type="text" id="formulario" class="form-control col-sm-10 " style="position: absolute;margin-left: 7%; ">
+            <button class="btn btn-info mb-1 p-2" id="boton" style="position: relative; margin-left:90%;  "><i
+                class="fas fa-search"></i></button>
+            <ul id="resultado">
+  
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm">
+        </div>
+      </div>
+    </div>
+  
+    <!-- <script>
+      const empresas = [{
+          nombre: 'Coca-Cola'
+        },
+        {
+          nombre: 'Sena'
+        },
+        {
+          nombre: 'Apple'
+        },
+        {
+          nombre: 'la empresa patitos feos '
+        },
+        {
+          nombre: 'fedco '
+        }
+  
+      ]
+      const formulario = document.querySelector('#formulario');
+      const boton = document.querySelector('#boton');
+      const resultado = document.querySelector('#resultado');
+      const filtrar = () => {
+        //console.log(formulario.value);
+        resultado.innerHTML = '';
+        const texto = formulario.value.toLowerCase();
+        for (let empresa of empresas) {
+          let nombre = empresa.nombre.toLowerCase();
+          if (nombre.indexOf(texto) !== -1) {
+            resultado.innerHTML += ` 
+              <li>${empresa.nombre}</li>
+              `
+          }
+        }
+        if (resultado.innerHTML === '') {
+          resultado.innerHTML += `
+          <li>Empresa no encontrada...</li>
+          `
+        }
+      }
+      boton.addEventListener('click', filtrar)
+      formulario.addEventListener('keyup', filtrar)
+  
+      filtrar();
+  
+    </script> -->
+    <!-- fin del buscador -->
+    <div class="galeria-port mt-5 mb-5">
+      <div class="col-sm-3  ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Smart Bytes</h2>
+            <p class="card-text">¿Tienes experiencia en Desarrollo web manejando distintos lenguajes?</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3"  data-toggle="modal" data-target="#exampleModal">ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Fusión Fix</h2>
+            <p class="card-text">Buscamos PHP Tech Leads para unirse a nuestro equipo de Desarrollo</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Pro Solutions</h2>
+            <p class="card-text">Empresa de soluciones logísticas, Contact Center, tercerización de procesos y servicios
+              digitales.</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="galeria-port mb-5">
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/e1.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">E-Nexus</h2>
+            <p class="card-text">Desarrollo de software implementando my sql, sentencias sql, html, java, javascript,
+              jQuery, angulajs y PHP</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3  ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/e1.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Nova Solutions</h2>
+            <p class="card-text">Estamos buscando un talentoso desarrollador Full Stack cuyo fuerte sea PHP y Javascript
+            </p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3  ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/e1.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Optimo Pro</h2>
+            <p class="card-text"> Estamos en tu búsqueda si eres apasionado por diseñar, construir e implementar
+              soluciones de Sistemas de Información</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="galeria-port mb-5">
+      <div class="col-sm-3  ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">SoluLite</h2>
+            <p class="card-text">Empresa requiere para su equipo de trabajo tecnico ó tecnologo para el cargo de
+              Desarrollador web PHP con mínimo 1 año de experiencia.</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">TecnoServ</h2>
+            <p class="card-text">Importante empresa requiere en su equipo de trabajo técnico o tecnólogo con conocimiento
+              indispensable en PHP y Javascript </p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Genesis Group</h2>
+            <p class="card-text">Desarrollo de sistemas informáticos en el sector turístico, requiere para su Departamento
+              de Desarrollo.a</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="galeria-port mb-5">
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/e1.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Universo Net</h2>
+            <p class="card-text">Buscamos desarrollador web PHP / Maquetador con experiencia demostrable de 2 años o más.
+            </p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/e1.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">TecnoFocal</h2>
+            <p class="card-text">Prestigiosa empresa se encuentra en búsqueda de profesional en desarrollo web</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/e1.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">TruNet </h2>
+            <p class="card-text">Se solicita ingeniero de sistemas</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="galeria-port mb-5">
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Nova Code</h2>
+            <p class="card-text">Importante empresa del sector TI, certificada en GPTW. Se encuentra en la búsqueda de
+              Profesional en ingeniera de sistemas, electrónica, industrial o carreras afines </p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3  ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">Konecta</h2>
+            <p class="card-text">¡Hola somos Konecta! Queremos que hagas parte de nuestro equipo de trabajo</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="card p-4" style="width: 18rem;">
+          <img src="assets/image/homeUser/empresa1.jpg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h2 class="card-text">DigiMedia</h2>
+            <p class="card-text">Reconocida empresa DigiMedia solicita profesional en Ingeniería de sistemas o carreras
+              afines</p>
+            <a routerLink="#" class="btn btn-primary p-2 mt-3" >ver mas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- bienvenida -->
+  <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Desarrollador WEB.</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body backgoud">
+          <!-- grid -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="assets/image/homeUser/e1.jpeg" alt="empresa" width="100%" height="auto" style="border-radius: 10px;">
+  
+              </div>
+              <div class="col-sm-8 mt-2">
+                <h5>Smart Bytes</h5>
+                <p>Ubicacion:Bogota</p>
+                <li>Esta oportunidad de empleo puede interesarte, buscamos DESARROLLADOR WEB con experiencia mínima de 2
+                  años relacionada con:</li>
+                <li>Desarrollo de aplicaciones en ambiente Web.</li>
+                <li>Experiencia en desarrollo en lenguajes de programación, PHP, AJAX, Javascript y JQuery, Java-JSP,
+                  Visual Basic, ASP. NET, HTML5.</li>
+                <p>¡Te ofrecemos! </p>
+                <p>Salario: 5.060.000 con todas las prestaciones de ley.</p>
+                <p>Horarios: Lunes a viernes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Postularme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer/ Pie de Pagina-->
+  <footer>
+      <div class="container-footer">
+        <div class="flex">
+          <a href="https://www.facebook.com/Coody-Expert-100691765174664/?modal=admin_todo_tour"
+            style="color: rgb(245, 245, 245); font-size: 40px; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/coodyexpert/"
+            style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCJjQWwyHmKPzh4hgrHy9NaQ"
+            style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="copyright">
+          DATOS &copy 2020 | <a routerLink="InicioAll.html">Coody Expert</a>
+        </div>
+      
+        <div class="information">
+          <a routerLink=""> Información Compañia </a> |
+          <a routerLink=""> Privacidad y Politica </a> |
+          <a routerLink=""> Terminos y Condiciones </a> |
+        </div>
+    
+      </div>
+    </footer>

@@ -1,0 +1,43 @@
+.card1{
+    margin-left: 14%;
+     padding-top: 5%;
+     padding-left: 5%;
+    
+    }
+    
+    .cardl {
+      background-color: rgba(29, 202, 179, 0.884);
+    }
+    
+    .icon-redes {
+      font-size: 40px;
+      margin-right: 3%;
+    }
+
+    .bg-pink {
+      /* background-color: transparent; */
+      transition: all 1.5s ease;
+      color: white;
+      background-color: #333366;
+      font-weight:bold;
+  }
+  
+  .main {
+      background-color: #333366;
+      color: #ffffff;
+  }
+  
+  .letracolor {
+      color: white;
+      font-weight:bold;
+  }
+  
+  .letracolor:hover {
+      color: white;
+      font-weight:bold;
+  }
+  
+  .fa-bars {
+      font-size: 30px;
+      color: #ffffff;
+  }

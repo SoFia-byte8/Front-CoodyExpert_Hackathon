@@ -1,0 +1,178 @@
+.imagen {
+  /* width: 20%; */
+  height: 620px;
+  background-size: contain;
+  /* background: linear-gradient(to right, #bdc3c7, #2c3e507d),url(../img/caferegistro.jpeg); */
+  background: linear-gradient(to right, #334d50d9, #1d1d1a92);
+  position: relative;
+
+}
+
+.containerprincipal {
+  padding: 0px !important;
+  margin-right: 0px !important;
+}
+
+.inputPeque {
+  width: 80%;
+}
+
+.divBoton {
+  display: flex;
+
+}
+
+.fa-key {
+  color: #009999c7;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.olvidoContrase {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 5%;
+  color: #009999;
+  font-weight: lighter;
+  text-decoration: none;
+
+}
+
+.olvidoContrase:hover {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 5%;
+  color: #009999;
+  font-weight: lighter;
+  text-decoration: none;
+
+}
+
+.fa-arrow-left {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.551);
+  margin-left: -95px;
+}
+
+.fa-arrow-left:hover {
+  font-size: 32px;
+  color: #00999997;
+  margin-left: -95px;
+}
+
+.colorBoton {
+  background-color: #009999;
+  color: aliceblue;
+  width: 25%;
+  font-size: 18px;
+}
+
+.colorBoton:hover {
+  background-color: #009999;
+  color: aliceblue;
+  width: 25%;
+}
+
+.caption {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+.letraImagen {
+
+  color: aliceblue;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+
+}
+
+.textoicon {
+  width: 80%;
+  margin: 5% auto auto 10%;
+
+}
+
+.textLadoIcon {
+  display: flex;
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+
+}
+
+.mensajeparrafo {
+  margin-left: 9%;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.fa-check-circle {
+  color: rgba(255, 255, 255, 0.591);
+  font-size: 25px;
+  margin-top: 10px;
+
+
+}
+
+.colorRegistro {
+  margin-left: 30%;
+  border: 2px solid #009999;
+  color: aliceblue;
+  width: 35%;
+  font-size: 18px;
+}
+
+.colorRegistro:hover {
+  margin-left: 30%;
+  background-color: #009999;
+  color: aliceblue;
+  width: 35%;
+  font-size: 18px;
+}
+
+/* modal de registro */
+
+
+
+.modal-title {
+  color: #249fb4;
+  padding: 3%;
+}
+
+.modal-body {
+  padding: 5%;
+}
+
+.modal-footer {
+  padding: 2%;
+}
+
+.modal-footer>button {
+  padding: 1%;
+}
+
+.backgoud {
+  background-color: rgba(150, 182, 204, 0.11);
+  padding: 2% 5%;
+}
+.titulo-form{
+    color: #249fb4;
+}
+.btn-primarys2 {    
+    text-align: center;    
+    width: 220px;
+    border:2px solid #17c3d6c4 ;
+    color: rgba(0, 0, 0, 0.589);
+    font-weight: bold;
+    padding: 10px;
+    transition:all .5s ease;
+}
+.btn-primarys2:hover {
+    color: #264a4ed7;
+    font-weight: bold;
+    background-color: rgba(177, 221, 247, 0.483);
+    border-color: transparent;
+}

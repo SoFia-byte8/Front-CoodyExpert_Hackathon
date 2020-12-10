@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333366;
+}
+/* modificaciones Geral */
+
+.bg-pink {
+    background-color: #333366;
+    transition: all 1.5s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.main {
+    background-color: #333366;
+    color: #ffffff;
+}
+
+.letracolor {
+    color: white;
+    font-weight: bold;
+}
+
+.letracolor:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+}
+/* footer */
+.container-footer {
+    width: 100%;
+    background:#333366;
+    padding: 10px;
+    
+}
+
+.copyright {
+    color: white;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.information {
+    text-align: right;
+}
+
+.information a {
+    text-decoration: none;
+    color: white;
+}
+.pading{
+    padding: 2%;
+}
+.btn-primary{
+    padding: 1%;
+}
+.nav-link{
+    padding: 2%;
+}

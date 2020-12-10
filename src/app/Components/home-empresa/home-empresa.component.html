@@ -1,0 +1,169 @@
+<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-pink">
+    <div class="container">
+      <a class="navbar-brand" routerLink="../Home_Empresa/inicioEmpr.html">
+        <img src="assets/image/homeUser/LOGO-OSCURO.png" alt="" width="130px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+            <a class="nav-link letracolor" routerLink="/crearOferta">Crear Oferta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/modificarDatos/company">Editar Datos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor" routerLink="/losMejoresProgramadores/reclutar">Buscar Desarrolladores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/notificacion/company">Notificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/perfil/Empresa">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letracolor " routerLink="/">Salir</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- carrusel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item height-carousel active">
+        <img src="assets/image/home-empresa/Programacion11.jpg" class="d-block w-100" alt="cod">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide lg-dark"><b>Personaliza Tu Perfil Como Empresa</b></h5>
+            <p class="letras-slaide-p"><b>Aqui encontraras los mejores talentos en Desarrolla web</b></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item height-carousel">
+        <img src="assets/image/home-empresa/Programacion12.jpg" class="d-block w-100" alt="off">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide"> <b>Personaliza Tu Perfil Como Empresa</b> </h5>
+            <p class="letras-slaide-p "><b>Aqui encontraras los mejores talentos en desarrolla web</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item height-carousel">
+        <img src="assets/image/home-empresa/Programacion25.jpg" class="d-block w-100" alt="off">
+        <div class="carousel-caption d-none d-md-block ">
+          <div class="texto-encima">
+            <h5 class="letras-slaide"> <b>Personaliza Tu Perfil Como Empresa</b> </h5>
+            <p class="letras-slaide-p "><b>Aqui encontraras los mejores talentos en desarrolla web</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" routerLink="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" routerLink="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--Imagen con Ondulación-->
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #ffffff;"></path>
+      </svg></div>
+  </div>
+  <!-- Bienvenido -->
+  <div>
+    <h1 class="text-center  bg-blue">¡Gracias por unirte!</h1>
+    <p class="text-center">Somos una Pagina de empleo donde las
+      empresas <br> podrán publicar ofertas y encontrar
+      programadores <br> de calidad que apliquen a ellas.</p>
+  </div>
+  <!-- seccion en gris -->
+  <div class="jumbotron">
+    <div class="containers">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="imagenesExtre" src="assets/image/desordenImg/coffe.jpg" alt="Comp" width="100%">
+        </div>
+        <div class="col-sm-7 ">
+          <h1 class="text-center"> Encuentra los perfiles más calificados para tu empresa</h1>
+          <br>
+          <p>Encuentra las personas que mejor se adaptan al perfil buscado, Realiza un Análisis 
+            de Desarrollo Profesional con la prueba de conocimiento que podras adjuntar para los reclutados. 
+            En pocos minutos y de forma sencilla, conocerás un perfil de tu conducta.</p>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <!--Articulo con un Card-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">¿Quieres reclutar los mejores programadores?</h5>
+          <p class="card-text">Encuentralos Aquí.</p>
+          <a routerLink="../reclutador/modificarEmpresa.html" class="btn btn-primary">IR</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Crea tu oferta laboral </h5>
+          <p class="card-text">Selecciona el boton Ir y te Redirigiremos.</p>
+          <a routerLink="../Ofertas/Ofertas.html" class="btn btn-primary">IR</a>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br>
+ 
+
+
+  <div class="container mb-5" >
+    <div class="row">
+      <div class="col">
+        <h1 class="Fraseprincipal">¿Como usar esta plataforma?</h1>
+        <p class="parrafo1">Con herramientas faciles y optimas que te ofrece Coody Expert, podras encontrar
+          a los mejores programadores, donde tu podras medir sus niveles de conocimiento, ver su perfil y
+          hoja de vida, grantizando mejor calidad y seguridad para la empresa reclutadora.</p>
+      </div>
+      <div class="col colimgagen">
+
+      </div>
+    </div>
+    
+  </div>
+  <div class="container-footer">
+    <div class="flex">
+      <a routerLink="https://www.facebook.com/Coody-Expert-100691765174664/?modal=admin_todo_tour"
+        style="color: rgb(245, 245, 245); font-size: 40px; margin-left: 20px;"><i class="fab fa-facebook"></i></a>
+      <a routerLink="https://www.instagram.com/coodyexpert/"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-instagram"></i></a>
+      <a routerLink="https://www.youtube.com/channel/UCJjQWwyHmKPzh4hgrHy9NaQ"
+        style="color:rgb(248, 246, 248); font-size: 40px; margin-left: 20px;"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+      DATOS &copy 2020 | <a routerLink="InicioAll.html">Coody Expert</a>
+    </div>
+  
+    <div class="information">
+      <a routerLink=""> Información Compañia </a> |
+      <a routerLink=""> Privacidad y Politica </a> |
+      <a routerLink=""> Terminos y Condiciones </a> |
+    </div>
+
+  </div>

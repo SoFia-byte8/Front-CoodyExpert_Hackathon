@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* carrusel */
+.height-carousel {
+    max-height: 600px;
+    min-width: 100%;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.btn-primary {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    border-color: white;
+    background: linear-gradient(180deg, #32c953d5 0%, #46c7d8c4 100%);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* footer */
+.container-footer {
+    width: 100%;
+    background:#333366;
+    padding: 10px;
+    
+}
+
+.copyright {
+    color: white;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.information {
+    text-align: right;
+}
+
+.information a {
+    text-decoration: none;
+    color: white;
+}
+
+/* modificaciones geraldine */
+.bg-pink {
+    background-color: transparent;
+    transition: all 1.5s ease;
+    color: white;
+    font-weight:bold;
+}
+
+.main {
+    background-color: #333366;
+    color: #ffffff;
+}
+
+.letracolor {
+    color: white;
+    font-weight:bold;
+}
+
+.letracolor:hover {
+    color: white;
+    font-weight:bold;
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.texto-encima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;    
+}
+.letras-slaide{
+    font-size: 40px;
+}
+.btn-primarys2 {    
+    text-align: center;    
+    width: 220px;
+    border:2px solid #17c3d6c4 ;
+    color: rgba(0, 0, 0, 0.589);
+    font-weight: bold;
+    padding: 10px;
+    transition:all .5s ease;
+}
+.btn-primarys2:hover {
+    color: #264a4ed7;
+    font-weight: bold;
+    background-color: rgba(177, 221, 247, 0.483);
+    border-color: transparent;
+}
+.btn-primarys {    
+    text-align: center;    
+    width: 220px;
+    border:2px solid #17c3d6c4 ;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition:all .5s ease;
+}
+.btn-primarys:hover {
+    color: #264a4ec1;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.483);
+    border-color: transparent;
+}
+.card-body{
+    text-align: center;
+}
+.color-div-diferente{
+    background-color:#3539399f ;
+    padding: 35px;
+    margin-top:-20px ;
+}
+.containers-center {
+    margin: 40px 100px 0px 100px;
+    text-align: center;
+}
+.nuestro-Grupo {
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    color:  #333366;
+
+}
+.galeria-port {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.jumbotron{
+    margin-top: 5%;
+}
+/* modal de boostrap contactanos */
+.backgoud{
+background-color:rgba(150, 182, 204, 0.11);
+}
+.modal-title  {
+    color:  #249fb4;
+}
+.titulo-form{
+    color: #249fb4;
+}
+.btn-color-for{
+    background-color:#249fb4;
+    color: white;
+}
+.imagenesExtre{
+    border-radius: 20px;
+}

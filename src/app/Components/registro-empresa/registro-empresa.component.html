@@ -4,7 +4,6 @@
       <div class="col-lg-6 imagen"
         style="background: linear-gradient(to right, #191b1bd9, #1d1d1aa8), url(assets/image/registroEmpresa/typewriter-801921_1280.jpg);">
         <div><img src="assets/image/registroEmpresa/LOGO-OSCURO.png" alt="" width="200px" style="margin-left:9%;"></div>
-
         <div class="caption ">
           <section>
             <h3 class=" letraImagen">¡Sí, Ya estas Registrado!</h3>
@@ -16,7 +15,6 @@
               <p class="mensajeparrafo">Pública las ofertas de Desarrollo</p>
             </div>
             <div class="textLadoIcon">
-
               <button type="submit" class="btn colorRegistro mt-3"> <a routerLink="/login"
                   style="text-decoration: none; color: white;">Inicio Sesión!</a></button>
             </div>
@@ -68,14 +66,12 @@
               </div>
             </div>
             <div class="form-row contenedorCompleto">
-
               <div class="form-group col-md-8 emailclass">
                 <label for="inputEmail4">Email</label>
                 <input formControlName="email" type="email" class="form-control" placeholder="name@example.com"
                   required>
                 <p *ngIf="signUpForm.get('email').hasError('email')" class="error-message">El correo electronico es
                   incorrecto </p>
-
               </div>
               <div class="form-group col-md-8">
                 <label for="inputEmail4">Ingresar Contraseña</label>
@@ -89,12 +85,9 @@
                   <input type="checkbox" aria-label="Radio button for following text input" onclick= "btTutorial.disabled =!this.checked">
                 </div>
               </div>
-              <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                 Acepta las políticas de privacidad</button>
             </div>
-
-            <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -193,19 +186,12 @@
               </div>
             </div>
             <br>
-
             <div class="contenedorCompleto">
               <button class="btn colorBoton mt-3" name="btTutorial" disabled >Registrate</button>
             </div>
-
-
           </form>
-
         </div>
-
       </div>
     </div>
   </div>
-
-
 </section>

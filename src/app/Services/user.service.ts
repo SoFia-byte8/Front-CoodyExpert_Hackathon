@@ -6,7 +6,7 @@ import { User } from '../Models/User';
   providedIn: 'root'
 })
 export class UserService {
-apiUrl: String = 'https://coodyexpert-morse.herokuapp.com';
+apiUrl: String = 'https://hackathoncoody.herokuapp.com';
   constructor(
     private http: HttpClient
   ) { }

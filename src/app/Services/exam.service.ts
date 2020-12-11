@@ -5,7 +5,7 @@ import { Exam } from '../Models/Exam';
   providedIn: 'root'
 })
 export class ExamService {
-  apiUrl: String = 'https://coodyexpert-morse.herokuapp.com';
+  apiUrl: String = 'https://hackathoncoody.herokuapp.com';
   constructor(
     private http: HttpClient
   ) { }

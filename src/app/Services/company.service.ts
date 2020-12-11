@@ -5,7 +5,7 @@ import { Company } from '../Models/Company';
   providedIn: 'root'
 })
 export class CompanyService {
-  apiURL: String = 'https://coodyexpert-morse.herokuapp.com';
+  apiURL: String = 'https://hackathoncoody.herokuapp.com';
   constructor(
     private http: HttpClient
   ) { }
